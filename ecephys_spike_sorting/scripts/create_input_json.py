@@ -79,7 +79,7 @@ def createInputJson(output_file,
 
     # hard coded paths to code on your computer and system
     ecephys_directory = r'C:\Users\colonellj\Documents\ecephys_spike_sorting\ecephys_spike_sorting'
-    ecephys_directory = r'C:\Users\NeuropixelsComp\Downloads\NewVDTprocessingCodes\ecephys_spike_sorting'
+    ecephys_directory = r'C:\Users\NeuropixelsComp\Documents\GitHub\ecephys_spike_sorting\ecephys_spike_sorting'
 
     # location of kilosort respositories for MATLAB versions.
     # determins what will be run by the kilosort_helper module
@@ -94,7 +94,7 @@ def createInputJson(output_file,
         kilosort_repository = r'C:\Users\NeuropixelsComp\.conda\envs\newks4_ece\Lib\site-packages\kilosort'  # default path for when we aren't using any of these
 
     # npy_matlab_repository = r'C:\Users\colonellj\Documents\npy-matlab-master'
-    npy_matlab_repository = r'C:\Users\NeuropixelsComp\ecephys_spike_sorting-master\npy-matlab'
+    npy_matlab_repository = r'C:\Users\NeuropixelsComp\Documents\GitHub\npy-matlab'
     # catGTPath = r'C:\Users\colonellj\Documents\CatGTWinApp\CatGT-win'
     # tPrime_path=r'C:\Users\colonellj\Documents\TPrime-win'
     # cWaves_path=r'C:\Users\colonellj\Documents\C_Waves-median\C_Waves-win'

@@ -35,7 +35,7 @@ ks_output_tag = ksTag_dict[ks_ver]
 # according to the new dictionary in the loop to that created json files.
 
 
-refPerMS_dict = {'default': 2.0, 'cortex': 2.0, 'medulla': 1.5, 'thalamus': 1.0}
+refPerMS_dict = {'default': 2.0, 'cortex': 2.0, 'medulla': 1.5, 'thalamus': 1.0} ### Yang ??? what does these number means?
 
 # threhold values appropriate for KS2, KS2.5
 ksTh2_dict = {'default':'[10,4]', 'cortex':'[10,4]', 'medulla':'[10,4]', 'thalamus':'[10,4]'}
@@ -64,17 +64,19 @@ logName = 'pipeline_test_log.csv'
 
 # Raw data directory = npx_directory
 # run_specs = name, gate, trigger and probes to process
-#npx_directory = r'D:\SC048_in'
-npx_directory = r"C:\SGL_DATA\For_Katie"
+# npx_directory = r'D:\SC048_in'
+# npx_directory = r"C:\SGL_DATA\For_Katie"
+npx_directory = r"Y:\SGL_DATA_drive"
 
-# Each run_spec is a list of 4 strings:
-#   undecorated run name (no g/t specifier, the run field in CatGT)
-#   gate index or range of gate indicies, as a string (e.g. '0')
-#   triggers to process/concatenate, as a string e.g. '0,400', '0,0 for a single file
+
+# Each run_spec is a list of 4 strings and 1 list:
+#   1-undecorated run name (no g/t specifier, the run field in CatGT)
+#   2-gate index or range of gate indicies, as a string (e.g. '0')
+#   3-triggers to process/concatenate, as a string e.g. '0,400', '0,0 for a single file
 #           can replace first limit with 'start', last with 'end'; 'start,end'
 #           will concatenate all trials in the probe folder
-#   probes to process, as a string, e.g. '0', '0,3', '0:3'
-#   brain regions, list of strings, one per probe, to set region specific params
+#   4-probes to process, as a string, e.g. '0', '0,3', '0:3'
+#   5-brain regions, list of strings, one per probe, to set region specific params
 #           these strings must match a key in the param dictionaries above.
 #
 # run_specs = [
@@ -92,7 +94,8 @@ run_specs = [
 # Output will be in the standard SpikeGLX directory structure:
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
-catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
+# catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250625_rec_d9_g0'
 
 # ------------
 # CatGT params
@@ -193,7 +196,8 @@ modules = [
 			]
 
 # json_directory = r'D:\SC048_out\json_files'
-json_directory = r'C:\SGL_DATA\For_Katie\json_files' #need to be created first
+# json_directory = r'C:\SGL_DATA\For_Katie\json_files' #need to be created first
+json_directory = r'Y:\SGL_DATA_drive\json_files' #need to be created first
 
 
 # -----------------------

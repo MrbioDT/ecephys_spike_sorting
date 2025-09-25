@@ -84,7 +84,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # ]
 
 run_specs = [
-						['wmm001_250705_rec_d12', '1', '0,0', '0', ['thalamus'] ]
+						['wmm001_250705_rec_d12', '0,2', '0,0', '0', ['thalamus'] ]
 ]
 
 # ------------------
@@ -95,7 +95,7 @@ run_specs = [
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
-catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250705_rec_d12_g1'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250705_rec_d12'
 
 # ------------
 # CatGT params
@@ -291,8 +291,8 @@ for spec in run_specs:
 
         print('Creating json file for CatGT on probe: ' + prb)
         #create CatGT command for this probe
-        catGT_input_json.append(os.path.join(json_directory, spec[0] + prb + '_CatGT' + '-input.json'))
-        catGT_output_json.append(os.path.join(json_directory, spec[0] + prb + '_CatGT' + '-output.json'))
+        catGT_input_json.append(os.path.join(json_directory, spec[0] + '_g' + prb + '_CatGT' + '-input.json'))
+        catGT_output_json.append(os.path.join(json_directory, spec[0] + '_g'+ prb + '_CatGT' + '-output.json'))
 
         # build extract string for SYNC channel for this probe
         # sync_extract = '-SY=' + prb +',-1,6,500'

@@ -435,7 +435,7 @@ for spec in run_specs:
         # corrected by TPrime. This output is used to obtain analog values
         # from the NI stream at spike times.
         # Will cause an error if no ni stream exists.
-        SpikeGLX_utils.CreateNITimeEvents(spec[0], first_gate, catGT_dest)
+        SpikeGLX_utils.CreateNITimeEvents(spec[0], str(first_gate), catGT_dest)
 
         # create json files for calling TPrime
         session_id = spec[0] + '_TPrime'

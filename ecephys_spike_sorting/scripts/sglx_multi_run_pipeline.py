@@ -8,8 +8,6 @@ from helpers import run_one_probe
 from create_input_json import createInputJson
 
 
-
-
 # script to run CatGT, kilosort, postprocessing and TPrime on data collected using
 # SpikeGLX. The construction of the paths assumes data was saved with
 # "Folder per probe" selected (probes stored in separate folders) AND
@@ -86,7 +84,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # ]
 
 run_specs = [
-						['wmm001_250705_rec_d12', '0,2', '0,0', '0', ['thalamus'] ]
+						['wmm001_250625_rec_d9', '0,1', '0,0', '0', ['thalamus'] ]
 ]
 
 # ------------------
@@ -97,7 +95,7 @@ run_specs = [
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
-catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250705_rec_d12'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250625_rec_d9'
 
 # ------------
 # CatGT params

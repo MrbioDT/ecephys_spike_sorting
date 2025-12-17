@@ -84,7 +84,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # ]
 
 run_specs = [
-						['wmm001_250625_rec_d9', '0,1', '0,0', '0', ['thalamus'] ]
+						['wmm001_250711_rec_d14', '0,1,2', '0,0', '0', ['thalamus'] ]
 ]
 
 # ------------------
@@ -95,12 +95,12 @@ run_specs = [
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
-catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250625_rec_d9'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250711_rec_d14'
 
 # ------------
 # CatGT params
 # ------------
-run_CatGT = False   # set to False to sort/process previously processed data.
+run_CatGT = True   # set to False to sort/process previously processed data.
 
 
 # CAR mode for CatGT. Must be equal to 'None', 'gbldmx', 'gblcar' or 'loccar'
@@ -111,7 +111,7 @@ loccar_max = 160
 
 # flag to process lf. The depth estimation module assumes lf has been processed.
 # if selected, must also include a range for filtering in the catGT_cmd_string
-process_lf = False
+process_lf = True
 
 
 # CatGT commands for bandpass filtering, artifact correction, and zero filling

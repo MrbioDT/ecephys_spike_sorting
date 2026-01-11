@@ -71,7 +71,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 
 # Each run_spec is a list of 4 strings and 1 list:
 #   1-undecorated run name (no g/t specifier, the run field in CatGT)
-#   2-gate index or range of gate indicies, as a string (e.g. '0')
+#   2-gate index or range of gate indicies, as a string (e.g. '0') to preprocess g0 and g1 and g2 all together then use '0,2'
 #   3-triggers to process/concatenate, as a string e.g. '0,400', '0,0 for a single file
 #           can replace first limit with 'start', last with 'end'; 'start,end'
 #           will concatenate all trials in the probe folder

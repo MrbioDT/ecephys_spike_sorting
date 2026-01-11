@@ -84,7 +84,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # ]
 
 run_specs = [
-						['wmm001_250711_rec_d14', '0,2', '0,0', '0', ['thalamus'] ]
+						['wmm001_250703_rec_d11', '0,4', '0,0', '0', ['thalamus'] ]
 ]
 
 # ------------------
@@ -95,7 +95,7 @@ run_specs = [
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
-catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250711_rec_d14'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250703_rec_d11'
 
 # ------------
 # CatGT params

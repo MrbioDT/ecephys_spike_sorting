@@ -415,7 +415,7 @@ for spec in run_specs:
         # copy json file to data directory as record of the input parameters
 
 
-    # loop over probes for processing.
+    # loop over probes for processing. d
     for i, prb in enumerate(prb_list):
 
         run_one_probe.runOne( session_id[i],

@@ -71,7 +71,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 
 # Each run_spec is a list of 4 strings and 1 list:
 #   1-undecorated run name (no g/t specifier, the run field in CatGT)
-#   2-gate index or range of gate indicies, as a string (e.g. '0')
+#   2-gate index or range of gate indicies, as a string (e.g. '0'), to preprocess g0 and g1 and g2 all together then use '0,2'
 #   3-triggers to process/concatenate, as a string e.g. '0,400', '0,0 for a single file
 #           can replace first limit with 'start', last with 'end'; 'start,end'
 #           will concatenate all trials in the probe folder
@@ -83,8 +83,12 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # 						['SC048_122920_ex', '0', '0,0', '0', ['cortex','thalamus','thalamus'] ]
 # ]
 
+# run_specs = [
+# 						['wmm001_250702_rec_d10', '0,1', '0,0', '0', ['thalamus'] ]
+# ]
+
 run_specs = [
-						['wmm001_250702_rec_d10', '0,1', '0,0', '0', ['thalamus'] ]
+						['wmm001_250624_rec_d8', '0,2', '0,0', '0', ['thalamus'] ]
 ]
 
 # ------------------
@@ -95,7 +99,8 @@ run_specs = [
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
-catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250702_rec_d10'
+# catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250702_rec_d10'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250624_rec_d8'
 
 # ------------
 # CatGT params
@@ -435,7 +440,8 @@ for spec in run_specs:
         # corrected by TPrime. This output is used to obtain analog values
         # from the NI stream at spike times.
         # Will cause an error if no ni stream exists.
-        SpikeGLX_utils.CreateNITimeEvents(spec[0], str(first_gate), catGT_dest)
+        SpikeGLX_utils.CreateNITimeEvents(spec[0], str(first_gate), catGT_dest) 
+        # this is the critical funtion to generated the corrected time, the adj.times.npy file
 
         # create json files for calling TPrime
         session_id = spec[0] + '_TPrime'

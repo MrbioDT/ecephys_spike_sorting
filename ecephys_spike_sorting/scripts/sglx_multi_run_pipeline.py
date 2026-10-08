@@ -84,7 +84,7 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # ]
 
 run_specs = [
-						['wmm001_250623_rec_d7', '0,3', '0,0', '0', ['thalamus'] ]
+						['cmm001_np1', '0', '0,0', '0', ['thalamus'] ]
 ]
 
 # ------------------
@@ -95,7 +95,7 @@ run_specs = [
 # run_folder/probe_folder/*.bin
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
-catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250623_rec_d7'
+catGT_dest = r'Y:\SGL_DATA_drive\cmm001_np1'
 #create this folder if catGT_dest doesn't exist
 os.makedirs(catGT_dest, exist_ok=True)
 

@@ -83,13 +83,13 @@ npx_directory = r"Y:\SGL_DATA_drive"
 # 						['SC048_122920_ex', '0', '0,0', '0', ['cortex','thalamus','thalamus'] ]
 # ]
 
-# run_specs = [
-# 						['wmm001_250702_rec_d10', '0,1', '0,0', '0', ['thalamus'] ]
-# ]
-
 run_specs = [
-						['cmm001_np1_1008_denoised_midShank', '0,1', '0,0', '0', ['thalamus'] ]
+						['wmm001_250625_rec_d9', '0,1', '0,0', '0', ['thalamus'] ]
 ]
+
+# run_specs = [
+# 						['cmm001_np1_1008_denoised_midShank', '0,1', '0,0', '0', ['thalamus'] ]
+# ]
 
 # ------------------
 # Output destination
@@ -100,7 +100,7 @@ run_specs = [
 # catGT_dest = r'D:\SC048_out'
 # catGT_dest = r'C:\SGL_DATA\For_Katie\wmm001_250625_rec_d9_g0'
 # catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250702_rec_d10'
-catGT_dest = r'Y:\SGL_DATA_drive\cmm001_np1_1008_denoised_midShank'
+catGT_dest = r'Y:\SGL_DATA_drive\wmm001_250625_rec_d9'
 
 # ------------
 # CatGT params
